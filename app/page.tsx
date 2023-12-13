@@ -3,6 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import Link from 'next/link';
 import Image from 'next/image';
+import loginImage from '@/public/login.jpg'
 
 // formik validation schema using Yup 
 const validationSchema = Yup.object().shape({
@@ -83,7 +84,7 @@ const page = () => {
       <div className="relative h-64 w-full sm:h-96 lg:h-full lg:w-1/2">
         <Image
           alt="Welcome"
-          src="https://wallpapercave.com/wp/wp5167329.jpg"
+          src={loginImage}
           className="absolute inset-0 h-full w-full object-cover"
         />
       </div>
